@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بنك اسئله ماده انظمه المؤسسات </title>
+    <title>ماده انظمه معلومات المؤسسات</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
 
@@ -29,7 +29,7 @@
             border: 1px solid rgba(255, 255, 255, 0.18);
             width: 90%;
             max-width: 400px;
-            margin-top: 60px;
+            margin-top: 60px; /* مسافة لعدم التداخل مع التنبيه */
         }
 
         h1 {
@@ -81,15 +81,54 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
+        /* تنسيق خاص لزر الجروب */
+        .group-btn {
+            background: rgba(37, 211, 102, 0.3); /* لون أخضر شفاف */
+            border-color: #25d366;
+        }
+        
+        .group-btn:hover {
+            background: #25d366;
+            color: white;
+        }
+
         .icon {
             margin-left: 10px;
         }
 
+        /* تنسيق الفوتر */
         .footer-text {
             margin-top: 30px;
-            font-size: 1em;
+            font-size: 1.1em;
             line-height: 1.6;
             opacity: 0.9;
+        }
+        
+        .footer-text h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .footer-text p {
+            margin: 5px 0 0;
+            font-size: 0.9em;
+        }
+
+        /* تنسيق عداد الزوار */
+        .visitor-counter {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .visitor-label {
+            font-size: 0.8em;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: bold;
         }
 
         /* حاوية واتساب والنص */
@@ -101,7 +140,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 8px; /* مسافة بين الزر والنص */
+            gap: 8px;
         }
 
         /* زر الواتساب */
@@ -144,11 +183,11 @@
 
     <!-- التنبيه في أعلى الصفحة -->
     <div class="header-note">
-        ⚠️ تنبيه: صلي علي النبي.  متعتمدش علي الموقع اعتماد كامل، الهدف منه مراجعة ما ذاكرته من بنك الأسئلة.
+        ⚠️ تنبيه: صلي علي النبي, متعتمدش علي الموقع اعتماد كامل، الهدف منه مراجعة ما ذاكرته من بنك الأسئلة.
     </div>
 
     <div class="container">
-        <h1>ماده انظمه المؤسسات</h1>
+        <h1>ماده انظمه معلومات المؤسسات</h1>
         
         <!-- رابط لصفحة الاختيارات -->
         <a href="Quiz.html" class="btn">
@@ -160,9 +199,21 @@
             <span class="icon">✅</span> أسئلة صح وخطأ
         </a>
 
+        <!-- رابط جروب الواتساب -->
+        <a href="https://chat.whatsapp.com/IWDZ5yaZdUi5lFjWV8gg3B" class="btn group-btn" target="_blank">
+            <span class="icon">📢</span> انضم للجروب (لباقي المواد)
+        </a>
+
+        <!-- النص في الأسفل -->
         <div class="footer-text">
-            <h3>تم تصميم: بسام وليد</h3>
+            <h3>تصميم: بسام وليد</h3>
             <p>لا تنسونا من دعواتكم ❤️</p>
+        </div>
+
+        <!-- عداد الزوار -->
+        <div class="visitor-counter">
+            <span class="visitor-label">عدد الزوار</span>
+            <img src="https://visitor-badge.laobi.icu/badge?page_id=bassam_finance_home" alt="عدد الزوار" style="height: 20px;">
         </div>
     </div>
 
@@ -176,6 +227,8 @@
         <div class="whatsapp-text">تواصل معنا عبر واتساب إذا لاحظت مشكلة</div>
     </div>
 
+</body>
+</html>
 </body>
 </html>
 
